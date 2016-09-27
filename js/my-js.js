@@ -1,15 +1,11 @@
 (function() {
 
-    var offsetHeight = 55;
+    var offsetHeight = 51;
     var scrollDuration = 300;
 
-    // $('.navbar-collapse').scrollspy({
-    //     offset: offsetHeight
+    // $('body').scrollspy({ 
+    //     target: '#nav-links'
     // });
-
-    $('body').scrollspy({ 
-        target: '#nav-links'
-    });
 
     $('.navbar li a').click(function (event) {
         var scrollPos = $('body > .container')
