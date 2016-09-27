@@ -1,3 +1,67 @@
-.profile-image {
-    margin-top: 0.65cm;
+body {
+    min-height: 2000px;
+    padding-top: 70px;
+    position: relative;
+}
+
+.flex-container {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    
+    -webkit-flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.social-buttons {
+    margin-top: 20px;
+}
+
+.my-name {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.id-card {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.id-photo {
+    flex-grow: 1;
+}
+
+.id-info {
+    flex-grow: 4;
+}
+
+.vertical-align {
+    display: flex;
+    flex-direction: row;
+}
+
+.vertical-align > [class^="col-"],
+.vertical-align > [class*=" col-"] {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Optional, to align inner items 
+                              horizontally inside the column */
 }
